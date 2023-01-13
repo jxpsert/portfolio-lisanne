@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+html, body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#topBlock {
+    height: 50%;
+    max-height: 50%;
+    width: 100%;
+    background-color: #FFFFFF;
+    text-align: center;
+
+    display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  white-space: nowrap;
+}
+
+
+#bigName {
+    font-weight: 800;
+    font-size: 7.5vw;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+#subName {
+    font-weight: 700;
+    font-size: 2vw;
+    color: #757575;
+    text-transform: uppercase;
+}
+
+#bottomBlock {
+    height: 50%;
+    width: 100%;
+    background-color: #1c1c1c;
+    text-align: center;
+}
+
+#buttonsRow {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+.socialButton {
+    font-weight: 300;
+    font-size: 7.5vw;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    height: 100%;
+    width: max-content;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+
+    flex-grow: 1;
+
+    transition: 0.5s;
+}
+
+.socialButton:hover {
+    background-color: #000000;
+}
+
+a.noStyle {
+    text-decoration: none;
+    color: inherit;
+}
