@@ -195,7 +195,27 @@ a.glow-hover:hover {
 }
 
 #projects-grid > div {
-  padding-right: 2em;
+  padding-right: 5em;
+}
+
+#blog {
+  width: 100%;
+  padding: 4em;
+  color: white;
+}
+
+#blog-grid {
+  width: 100%;
+  display: grid;
+  color: white;
+
+  gap: 2em;
+
+  grid-template-columns: auto;
+}
+
+#blog-grid > div {
+  padding-right: 5em;
 }
 
 body {
@@ -214,6 +234,10 @@ body {
 
 .upper {
   text-transform: uppercase;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .fs-2 {
