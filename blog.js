@@ -21,13 +21,17 @@ const addPost = (date, title, content) => {
 };
 
 const getPosts = async () => {
-  const posts = await fetch("./blog.json");
+  const postsapi =
+    "https://0v4j861z.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20%22blogpost%22%5D";
+  const posts = await fetch(postsapi);
   const data = await posts.json();
-  data.posts.forEach((post) => {
+
+  data.result.forEach((post) => {
+    console.log(post);
     addPost(post.date, post.title, post.content);
   });
 
-  if (data.posts.length == 0) {
+  if (data.result.length == 0) {
     const post = document.createElement("div");
     post.classList.add("blog-post");
     post.innerHTML = `

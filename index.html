@@ -58,27 +58,6 @@
     <div id="projects">
         <h1>Projects</h1>
         <div id="projects-grid">
-            <div>
-                <h1>OpenAED</h1>
-                <span class="monospace fs-1p5">Easy access to AED data via OpenStreetMap<br /><a
-                        href="https://openaed.nl/" class="glow-hover text-white" target="_blank">Visit <i
-                            class="bi bi-box-arrow-up-right"></i></a></span>
-            </div>
-
-            <div>
-                <h1>112 Gelderland-Zuid</h1>
-                <span class=" monospace fs-1p5">Pictures of Dutch fire, ambulance and
-                    police.<br /><a href="https://112glz.nl/" class="glow-hover text-white" target="_blank">Visit <i
-                            class="bi bi-box-arrow-up-right"></i></a></span>
-            </div>
-
-            <div>
-                <h1>Kristalbank</h1>
-                <span class=" monospace fs-1p5">Pseudocurrency banking system for my high school. Never
-                    actually used.<br /><a href="https://github.com/jxpsert/kristalbank" class="glow-hover text-white"
-                        target="_blank">Visit
-                        <i class="bi bi-box-arrow-up-right"></i></a></span>
-            </div>
         </div>
     </div>
     <hr>
@@ -92,6 +71,25 @@
             </div> -->
         </div>
     </div>
+
+    <script>
+        const projectsapi =
+            "https://0v4j861z.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20'project'%5D";
+
+        const projects = document.getElementById("projects-grid");
+
+        fetch(projectsapi).then(data => data.json()).then(posts => {
+            posts.result.forEach(post => {
+                projects.innerHTML += `<div>
+                <h1>${post.title}</h1>
+                <span class=" monospace fs-1p5">${post.description}<br /><a href="${post.link}" class="glow-hover text-white"
+                        target="_blank">Visit
+                        <i class="bi bi-box-arrow-up-right"></i></a></span>
+            </div>`;
+            });
+
+        });
+    </script>
 
 </body>
 
