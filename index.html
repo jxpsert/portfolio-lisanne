@@ -1,96 +1,321 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jasper Platenburg</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./main.css">
-    <script src="./blog.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="./style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
-    <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-    <div id="hero">
-        <div id="hero-left">
-            <span id="bigName" class="glow">Jasper<br />Platenburg</span>
-            <span id="subName" class="glow monospace">Freelance Software Developer</span>
-        </div>
-        <div id="hero-right">
-            <div id="buttonsRow">
-                <div class="socialButton monospace"><a class="noStyle"
-                        href="https://www.linkedin.com/in/jasper-platenburg/" target="_blank" title="LinkedIn"><i
-                            class="bi bi-linkedin"></i><span class="buttontext">&nbsp;LinkedIn</span></a></div>
-                <div class="socialButton monospace"><a class="noStyle" href="https://www.github.com/jxpsert"
-                        target="_blank" title="GitHub"><i class="bi bi-github"></i><span
-                            class="buttontext">&nbsp;GitHub</span></a></div>
-                <div class="socialButton monospace"><a class="noStyle" href=" https://twitter.com/jxpsert"
-                        target="_blank" title="Twitter"><i class="bi bi-twitter"></i><span
-                            class="buttontext">&nbsp;Twitter</span></a></div>
+    <div id="header" class="container-fluid bg-maroon">
+        <div class="container text-center py-5">
+            <img id="headshot" src="./me.jpg"><br>
+            <span class="fs-1 fw-bold">Jasper Platenburg</span><br>
+            <span class="fs-3 fw-bold">Software Developer student</span><br>
+
+            <div class="btn-group mt-5" role="group">
+                <a href="https://github.com/jxpsert" target="_blank" title="GitHub" class="btn text-white fs-1 mx-2"><i
+                        class="bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/jasper-platenburg/" target="_blank" title="LinkedIn"
+                    class="btn text-white fs-1 mx-2"><i class="bi bi-linkedin"></i></a>
+                <a href="mailto:jplatenburg@ptdk.nl" target="_blank" title="E-mail" class="btn text-white fs-1 mx-2"><i
+                        class="bi bi-envelope-at-fill"></i></a>
             </div>
         </div>
     </div>
+    <div class="container pt-5" id="content">
+        <span>Jump to: <a href="#personal">Personal</a> / <a href="#work">Work experience</a> / <a
+                href="#edu">Education</a></span>
+        <br>
+        <section id="personal">
+            <h1>Personal information</h1>
 
-    <div id="summary">
-        <div>
-            <h1 class="">Job</h1>
-            <span class="monospace upper fs-2">Parking service<br />@ HC Support</span>
-        </div>
-        <div>
-            <h1 class="">School</h1>
-            <span class="monospace upper fs-2">MBO4 Software Developer<br />@ Koning Willem I College</span>
-        </div>
-        <div>
-            <h1 class="">Volunteer</h1>
-            <span class="monospace upper fs-2">@ OpenStreetMap
-                <!-- <br>&amp; Animal Ambulance Nijmegen --></span>
-        </div>
+            <span class="fs-2 fw-bold">Hi there!</span>
+            <p class="fs-6">I'm Jasper. I'm <span id="age">18</span> years old. I was born and still live in Nijmegen,
+                the Netherlands. From a very young age, I've been interested in computers. Starting with little popups
+                using Visual Basic, I soon learned the powers of the internet using HTML and CSS. In high school I was
+                introduced to databases in my IT class, using SQL. Ever since, it has been my dream to become a
+                fully-fledged software developer.
+                <br><br>
+                Other interests include going to the Efteling theme park, working on OpenStreetMap and the occasional
+                videogame or
+                Netflix series. I also enjoy selfhosting webapps. For example, my notes, screenshots and documents are
+                all selfhosted using open-source software. They're fairly simple, but I enjoy the fact that it's
+                possible.
+                <br><br>
+                As for the future? I aspire to join the volunteer fire brigade. I'm also interested in data and
+                Open-Source
+                Intelligence. I hope to get a job in the police, safety region or other organisations where I can
+                actively contribute to my community's wellbeing.
+
+                <h5>Contact</h5>
+
+                You can find me on <a href="https://twitter.com/jxpsert" target="_blank">X (Twitter)</a>, send me a
+                message on <a href="https://www.linkedin.com/in/jasper-platenburg/" target="_blank">LinkedIn</a> or send
+                me an <a href="mailto:jplatenburg@ptdk.nl" target="_blank">e-mail</a>.
+            </p>
+        </section>
+        <section id="work">
+            <h1>Work experience</h1>
+
+            <ul id="worklist">
+                <li>
+                    <div class="experience">
+                        <div class="row">
+                            <div class="col-10">
+                                <span class="title">Operator VMC</span>
+                                <span class="company"><i class="bi bi-briefcase-fill"></i>&nbsp;HC Support</span>
+                                <span class="duration"><i class="bi bi-clock-fill"></i>&nbsp;august 2023 -
+                                    current</span>
+                                <br>
+                                <p class="description">
+                                    Operator in the Traffic Management Centre (VMC) of the municipality of Nijmegen. The
+                                    voice
+                                    behind the intercom of bollards and parking meters in the city center. In addition,
+                                    also
+                                    the
+                                    point of contact for attendants of parking garages and lots.
+                                </p>
+                            </div>
+                            <div class="col">
+                                <span class="skills">Skills</span>
+                                <ul>
+                                    <li>Customer service</li>
+                                    <li>TOPdesk</li>
+                                    <li>English</li>
+                                    <li>Microsoft Office</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="experience">
+                        <div class="row">
+                            <div class="col-10">
+                                <span class="title">Parking attendant</span>
+                                <span class="company"><i class="bi bi-briefcase-fill"></i>&nbsp;HC Support</span>
+                                <span class="duration"><i class="bi bi-clock-fill"></i>&nbsp;april 2023 -
+                                    august 2023</span>
+                                <br>
+                                <p class="description">
+                                    Management of parking garages for the municipality of Nijmegen including
+                                    Kelfkensbos, Keizer Karel and Mariënburg. Tasks such as maintaining ticket numbers
+                                    at cash registers, cleaning up litter and helping customers.
+                                </p>
+                            </div>
+                            <div class="col">
+                                <span class="skills">Skills</span>
+                                <ul>
+                                    <li>Customer service</li>
+                                    <li>English</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="experience">
+                        <div class="row">
+                            <div class="col-10">
+                                <span class="title">Flexworker</span>
+                                <span class="company"><i class="bi bi-briefcase-fill"></i>&nbsp;ASA Talent</span>
+                                <span class="duration"><i class="bi bi-clock-fill"></i>&nbsp;october 2022 -
+                                    april 2023</span>
+                                <br>
+                                <p class="description">
+                                    Flexible deployment at companies where necessary.
+                                    - Working student at the Arnhem and Nijmegen University of Applied Sciences
+                                    - Warehouse work at Primark (Nijmegen)
+                                    - Bicycle courier at Cycloon Post (Nijmegen)
+                                </p>
+                            </div>
+                            <div class="col">
+                                <span class="skills">Skills</span>
+                                <ul>
+                                    <li>English</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="experience">
+                        <div class="row">
+                            <div class="col-10">
+                                <span class="title">Emergency Response Officer</span>
+                                <span class="company"><i class="bi bi-briefcase-fill"></i>&nbsp;Albert Heijn</span>
+                                <span class="duration"><i class="bi bi-clock-fill"></i>&nbsp;november 2022 -
+                                    january 2023</span>
+                                <br>
+                                <p class="description">
+                                    Company emergency response officer in the Nijmegen Dukenburg branch. Course from
+                                    Quinton BHV.
+                                </p>
+                            </div>
+                            <div class="col">
+                                <span class="skills">Skills</span>
+                                <ul>
+                                    <li>Basic Life Support</li>
+                                    <li>Wound care</li>
+                                    <li>Fire safety</li>
+                                    <li>Evacuation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="experience">
+                        <div class="row">
+                            <div class="col-10">
+                                <span class="title">Sales Employee</span>
+                                <span class="company"><i class="bi bi-briefcase-fill"></i>&nbsp;Albert Heijn</span>
+                                <span class="duration"><i class="bi bi-clock-fill"></i>&nbsp;october 2021 -
+                                    january 2023</span>
+                                <br>
+                                <p class="description">
+                                    Activities such as unloading and loading freight, filling compartments, and manning
+                                    the Pick Up Point.
+                                </p>
+                            </div>
+                            <div class="col">
+                                <span class="skills">Skills</span>
+                                <ul>
+                                    <li>English</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="experience">
+                        <div class="row">
+                            <div class="col-10">
+                                <span class="title">Bike courier</span>
+                                <span class="company"><i class="bi bi-briefcase-fill"></i>&nbsp;New York Pizza</span>
+                                <span class="duration"><i class="bi bi-clock-fill"></i>&nbsp;june 2021 -
+                                    october 2021</span>
+                                <br>
+                                <p class="description">
+                                    Delivery of pizza and other snack items in Lindenholt and Dukenburg.
+                                </p>
+                            </div>
+                            <div class="col">
+                                <span class="skills">Skills</span>
+                                <ul>
+                                    <li>English</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="edu">
+            <h1>Education</h1>
+
+            <ul id="edulist">
+                <li>
+                    <div class="experience">
+                        <div class="row">
+                            <div class="col-10">
+                                <span class="title">MBO4 Software Developer</span>
+                                <span class="school"><i class="bi bi-building-fill"></i>&nbsp;Koning Willem I
+                                    College</span>
+                                <span class="duration"><i class="bi bi-clock-fill"></i>&nbsp;september 2023 -
+                                    current</span>
+
+                                <p class="description">
+                                    MBO4 BOL training as a Software developer at the branch in 's-Hertogenbosch
+                                </p>
+                            </div>
+                            <div class="col">
+                                <span class="skills">Skills</span>
+                                <ul>
+                                    <li>C#</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>SQL</li>
+                                    <li>PHP</li>
+                                    <li>Agile/Scrum</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="experience">
+                        <div class="row">
+                            <div class="col-10">
+                                <span class="title">Bachelor HBO-ICT <i
+                                        class="bi bi-exclamation-triangle-fill text-danger" title="No degree"></i><span
+                                        class="text-danger d-lg-none d-inline">&nbsp;No degree</span></span>
+                                <span class="school"><i class="bi bi-building-fill"></i>&nbsp;Hogeschool van Arnhem
+                                    en
+                                    Nijmegen</span>
+                                <span class="duration"><i class="bi bi-clock-fill"></i>&nbsp;august 2021 -
+                                    march 2023</span>
+
+                                <p class="description">
+                                    Not finished. Nearly finished the first year, completed in the first half of the
+                                    second year.
+                                    Profile Software Development;
+                                    - Web development with HTML, CSS and PHP
+                                    - Software development with Processing, Java and C++
+                                    - Database development with (Microsoft) SQL and Neo4J
+                                    - Working with Git and project management applications such as GitLab and
+                                    Bitbucket/Jira
+                                </p>
+                            </div>
+                            <div class="col">
+                                <span class="skills">Skills</span>
+                                <ul>
+                                    <li>Java</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>SQL</li>
+                                    <li>PHP</li>
+                                    <li>Agile/Scrum</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="experience">
+                        <div class="row">
+                            <div class="col-10">
+                                <span class="title">High school</span>
+                                <span class="school"><i class="bi bi-building-fill"></i>&nbsp;Kristallis</span>
+                                <span class="duration"><i class="bi bi-clock-fill"></i>&nbsp;august 2016 -
+                                    july 2021</span>
+
+                                <p class="description">
+                                    HAVO with profile Economy and Society. Subjects such as English, Dutch, German,
+                                    Maths, Economics, History, Geography, IT and PE.
+                                </p>
+                            </div>
+                            <div class="col">
+                                <span class="skills">Skills</span>
+                                <ul>
+                                    <li>General education</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
     </div>
-    <hr>
-    <div id="projects">
-        <h1>Projects</h1>
-        <div id="projects-grid">
-        </div>
-    </div>
-    <hr>
-    <div id="blog">
-        <div id="blog-grid">
-            <!-- <div class="blog-post">
-                <h2>Post title</h2>
-                <span class="monospace italic">may 11, 2023</span>
-                <p class="monospace">Post</p>
-                <hr>
-            </div> -->
-        </div>
-    </div>
-
-    <script>
-        const projectsapi =
-            "https://0v4j861z.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20'project'%5D";
-
-        const projects = document.getElementById("projects-grid");
-
-        fetch(projectsapi).then(data => data.json()).then(posts => {
-            posts.result.forEach(post => {
-                projects.innerHTML += `<div>
-                <h1>${post.title}</h1>
-                <span class=" monospace fs-1p5">${post.description}<br /><a href="${post.link}" class="glow-hover text-white"
-                        target="_blank">Visit
-                        <i class="bi bi-box-arrow-up-right"></i></a></span>
-            </div>`;
-            });
-
-        });
-    </script>
-
 </body>
 
 </html>
