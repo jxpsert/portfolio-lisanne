@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "Open Sans";
+}
+
+:root {
+  --primary: #800000;
+  --secondary: #1c1c1c;
+}
+
+.bg-maroon {
+  background-color: var(--primary);
+}
+
+#header {
+  color: white;
+}
+
+div.icons > div.row > div.col {
+  font-size: 3em;
+  transition: 0.2s;
+}
+
+div.icons > div.row > div.col:hover {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+ul#worklist,
+ul#edulist {
+  list-style-type: none;
+  padding: 0;
+}
+
+div.experience {
+  padding: 1em;
+  border-radius: 0.75em;
+  border: 1px solid rgba(28, 28, 28, 0.25);
+  margin-bottom: 2em;
+}
+
+div.experience span.title,
+div.experience span.skills {
+  font-weight: 700;
+  font-size: 1.17em;
+  color: var(--primary);
+  display: block;
+}
+
+div.experience span.company,
+div.experience span.school {
+  font-weight: 700;
+  font-size: 1em;
+  color: var(--secondary);
+  display: block;
+}
+
+div.experience span.duration {
+  font-weight: 700;
+  font-size: 1em;
+  color: var(--secondary);
+  display: block;
+}
+
+a {
+  color: #28a9ff;
+}
+
+section {
+  margin-bottom: 2.5em;
+  margin-top: 2.5em;
+}
+
+#headshot {
+  border-radius: 50%;
+  box-shadow: 5px 5px 0px 0px rgba(28, 28, 28, 1);
+  margin-bottom: 2em;
+}
