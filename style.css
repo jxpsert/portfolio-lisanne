@@ -42,7 +42,8 @@ h6 {
 }
 
 ul#worklist,
-ul#edulist {
+ul#edulist,
+ul#projlist {
   list-style-type: none;
   padding: 0;
 }
@@ -77,8 +78,13 @@ div.experience span.duration {
   display: block;
 }
 
-a {
+a,
+.link {
   color: #28a9ff;
+}
+
+.link:hover {
+  cursor: pointer;
 }
 
 section {
@@ -90,4 +96,8 @@ section {
   border-radius: 50%;
   box-shadow: 5px 5px 0px 0px rgba(28, 28, 28, 1);
   margin-bottom: 2em;
+}
+
+.link.repo {
+  margin-left: 0.5em;
 }
