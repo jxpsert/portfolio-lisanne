@@ -1,6 +1,6 @@
 const LoadExperience = () => {
   const experienceURL =
-    "https://0v4j861z.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20'experience'%5D";
+    "https://0v4j861z.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20%22experience%22%5D%20%7C%20order(startdate%20desc)";
 
   const worklist = document.querySelector("#worklist");
 

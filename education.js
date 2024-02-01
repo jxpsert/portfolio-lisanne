@@ -1,6 +1,6 @@
 const LoadEducation = () => {
   const educationURL =
-    "https://0v4j861z.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20'education'%5D";
+    "https://0v4j861z.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20%22education%22%5D%20%7C%20order(startdate%20desc)";
 
   const edulist = document.querySelector("#edulist");
 
