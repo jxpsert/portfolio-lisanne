@@ -7,6 +7,7 @@ html {
 
 * {
   font-family: "Open Sans";
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -100,4 +101,49 @@ section {
 
 .link.repo {
   margin-left: 0.5em;
+}
+
+.grid
+{
+  display: grid;
+  grid-template-rows: auto;
+  grid-auto-flow: column;
+  gap: 1em;
+}
+
+.service
+{
+  padding: 1em;
+  border-radius: 0.75em;
+  border: 1px solid rgba(28, 28, 28, 0.25);
+  margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+span.service-amount::before
+{
+  content: "€";
+}
+
+span.service-amount
+{
+  color: var(--primary);
+  font-size: 2em;
+  align-self: flex-end;
+}
+
+span.service-amount-text
+{
+  display: inline-block;
+  margin-left: 0.5em;
+  color: var(--secondary);
+  font-size: 0.75em;
+  font-style: italic;
+  align-self: flex-end;
+}
+
+.mb-auto
+{
+  margin-bottom: auto;
 }
