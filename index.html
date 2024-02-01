@@ -10,12 +10,13 @@
     <link href="./style.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-    </script>
+        </script>
 
     <script src="./experience.js" defer></script>
     <script src="./education.js" defer></script>
     <script src="./projects.js" defer></script>
     <script src="./localisation.js" defer></script>
+    <script src="./service.js" defer></script>
     <script src="./settings.js" defer></script>
 </head>
 
@@ -46,8 +47,8 @@
             <span class="fs-2 fw-bold">Hi there!</span>
             <p class="fs-6">
 
-                <h5>Contact</h5>
-                <span class="contact"></span>
+            <h5 id="contact">Contact</h5>
+            <span class="contact"></span>
             </p>
         </section>
 
@@ -74,37 +75,17 @@
 
             </ul>
         </section>
+
+        <section id="services">
+            <h1>Services</h1>
+
+            <div id="services-grid" class="grid">
+            
+            </div>
+
+            <span id="interestedSpan">Interested?</span> <a href="#contact">Contact</a>
+        </section>
     </div>
-
-
-
-    <script>
-        if (localStorage.getItem("lang") == null) {
-            localStorage.setItem("lang", "nl"); // Set language to Dutch if not set
-        }
-
-        if (localStorage.getItem("lang") == "nl") { // If language is Dutch; make English look like a link
-            document.getElementById("lang_en").classList.add("link");
-            document.getElementById("lang_nl").classList.remove("link");
-        } else { // And the other way around
-            document.getElementById("lang_nl").classList.add("link");
-            document.getElementById("lang_en").classList.remove("link");
-        }
-
-        function english() { // Set language to English
-            if (localStorage.getItem("lang") != "en") {
-                localStorage.setItem("lang", "en");
-                location.reload();
-            }
-        }
-
-        function dutch() { // Set language to Dutch
-            if (localStorage.getItem("lang") != "nl") {
-                localStorage.setItem("lang", "nl");
-                location.reload();
-            }
-        }
-    </script>
 </body>
 
 </html>
