@@ -5,12 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jasper Platenburg</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="./style.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
 
     <script src="./experience.js" defer></script>
     <script src="./education.js" defer></script>
@@ -28,32 +26,27 @@
             <span class="fs-3 fw-bold">Software Developer student</span><br>
 
             <div class="btn-group mt-5" role="group">
-                <a href="https://github.com/jxpsert" target="_blank" title="GitHub" class="btn text-white fs-1 mx-2"><i
-                        class="bi bi-github"></i></a>
-                <a href="https://www.linkedin.com/in/jasper-platenburg/" target="_blank" title="LinkedIn"
-                    class="btn text-white fs-1 mx-2"><i class="bi bi-linkedin"></i></a>
-                <a href="mailto:jplatenburg@ptdk.nl" target="_blank" title="E-mail" class="btn text-white fs-1 mx-2"><i
-                        class="bi bi-envelope-at-fill"></i></a>
-                <a href="https://blog.ptdk.nl" target="_blank" title="Blog" class="btn text-white fs-1 mx-2"><i
-                        class="bi bi-newspaper"></i></a>
+                <a href="https://github.com/jxpsert" target="_blank" title="GitHub" class="btn text-white fs-1 mx-2"><i class="bi bi-github"></i><span class="icon-text">GitHub</span></a>
+                <a href="https://www.linkedin.com/in/jasper-platenburg/" target="_blank" title="LinkedIn" class="btn text-white fs-1 mx-2"><i class="bi bi-linkedin"></i><span class="icon-text">LinkedIn</span></a>
+                <a href="mailto:jplatenburg@ptdk.nl" target="_blank" title="E-mail" class="btn text-white fs-1 mx-2"><i class="bi bi-envelope-at-fill"></i><span class="icon-text">E-mail</span></a>
+                <a href="https://blog.ptdk.nl" target="_blank" title="Blog" class="btn text-white fs-1 mx-2"><i class="bi bi-newspaper"></i><span class="icon-text">Blog</span></a>
             </div>
         </div>
     </div>
-    <div class="container pt-5" id="content">
-        <span id="lang_en" onclick="english();" class="">English</span> / <span id="lang_nl" class="link"
-            onclick="dutch();">Nederlands</span>
+    <div class="container pt-5 w-75" id="content">
+        <span id="lang_en" onclick="english();" class="lang"><img src="/assets/flag_uk_16.png"> English</span> / <span id="lang_nl" class="lang link" onclick="dutch();"><img src="/assets/flag_nl_16.png"> Nederlands</span>
         <section id="personal">
-            <h1>Personal information</h1>
+            <h1>Persoonlijke informatie</h1>
             <span class="fs-2 fw-bold">Hi there!</span>
             <p class="fs-6">
 
-            <h5 id="contact">Contact</h5>
-            <span class="contact"></span>
+                <h5 id="contact">Contact</h5>
+                <span class="contact"></span>
             </p>
         </section>
 
         <section id="work">
-            <h1>Work experience</h1>
+            <h1>Werkervaring</h1>
 
             <ul id="worklist">
 
@@ -61,7 +54,7 @@
         </section>
 
         <section id="edu">
-            <h1>Education</h1>
+            <h1>Opleiding</h1>
 
             <ul id="edulist">
 
@@ -69,21 +62,21 @@
         </section>
 
         <section id="projects">
-            <h1>Projects</h1>
+            <h1>Projecten</h1>
 
-            <ul id="projlist">
+            <ul id="projlist" class="cols-3">
 
             </ul>
         </section>
 
         <section id="services">
-            <h1>Services</h1>
+            <h1>Diensten</h1>
 
             <div id="services-grid" class="grid">
-            
+
             </div>
 
-            <span id="interestedSpan">Interested?</span> <a href="#contact">Contact</a>
+            <span id="interestedSpan">Geïnteresseerd?</span> <a href="#contact">Contact</a>
         </section>
     </div>
 </body>

@@ -23,27 +23,31 @@ if (localStorage.getItem("lang") == "nl") {
 
 // Language links
 if (localStorage.getItem("lang") == null) {
-  localStorage.setItem("lang", "nl"); // Set language to Dutch if not set
+  dutch(); // Set language to Dutch if not set
 }
 
-if (localStorage.getItem("lang") == "nl") { // If language is Dutch; make English look like a link
+if (localStorage.getItem("lang") == "nl") {
+  // If language is Dutch; make English look like a link
   document.getElementById("lang_en").classList.add("link");
   document.getElementById("lang_nl").classList.remove("link");
-} else { // And the other way around
+} else {
+  // And the other way around
   document.getElementById("lang_nl").classList.add("link");
   document.getElementById("lang_en").classList.remove("link");
 }
 
-function english() { // Set language to English
+function english() {
+  // Set language to English
   if (localStorage.getItem("lang") != "en") {
-      localStorage.setItem("lang", "en");
-      location.reload();
+    localStorage.setItem("lang", "en");
+    location.reload();
   }
 }
 
-function dutch() { // Set language to Dutch
+function dutch() {
+  // Set language to Dutch
   if (localStorage.getItem("lang") != "nl") {
-      localStorage.setItem("lang", "nl");
-      location.reload();
+    localStorage.setItem("lang", "nl");
+    location.reload();
   }
 }

@@ -27,7 +27,11 @@ const LoadEducation = () => {
   const createCard = (data) => {
     const li = document.createElement("li");
     const experienceDiv = document.createElement("div");
-    experienceDiv.classList.add("experience");
+    experienceDiv.classList.add("experience", "edu");
+
+    if (data.endDate) {
+      experienceDiv.classList.add("past");
+    }
 
     const col10Div = document.createElement("div");
     col10Div.classList.add("col-10");
