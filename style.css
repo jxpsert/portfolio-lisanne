@@ -14,8 +14,14 @@ html
 
 :root
 {
-  --primary: #800000;
+  --primary: #ff69b4;
   --secondary: #1c1c1c;
+}
+
+a,
+span
+{
+  color: #505050;
 }
 
 .bg-maroon
@@ -32,6 +38,7 @@ div.icons > div.row > div.col
 {
   font-size: 3em;
   transition: 0.2s;
+  color: white;
 }
 
 div.icons > div.row > div.col:hover
@@ -43,6 +50,7 @@ div.icons > div.row > div.col:hover
 {
   display: none;
   font-size: .5em;
+  color: white;
 }
 
 h1,
@@ -118,7 +126,6 @@ section
 #headshot
 {
   border-radius: 50%;
-  box-shadow: 5px 5px 0px 0px rgba(28, 28, 28, 1);
   margin-bottom: 2em;
 }
 
@@ -137,38 +144,6 @@ section
   gap: 1em;
 }
 
-.service
-{
-  padding: 1em;
-  border-radius: 0.75em;
-  border: 1px solid rgba(28, 28, 28, 0.25);
-  margin-bottom: 2em;
-  display: flex;
-  flex-direction: column;
-}
-
-span.service-amount::before
-{
-  content: "€";
-}
-
-span.service-amount
-{
-  color: var(--primary);
-  font-size: 2em;
-  align-self: flex-end;
-}
-
-span.service-amount-text
-{
-  display: inline-block;
-  margin-left: 0.5em;
-  color: var(--secondary);
-  font-size: 0.75em;
-  font-style: italic;
-  align-self: flex-end;
-}
-
 .mb-auto
 {
   margin-bottom: auto;
@@ -177,16 +152,6 @@ span.service-amount-text
 .w-75
 {
   width: 75%;
-}
-
-.lang
-{
-  font-weight: bold;
-}
-
-.lang.link
-{
-  font-weight: inherit;
 }
 
 .experience.work:not(.past),

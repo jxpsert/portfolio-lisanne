@@ -4,40 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jasper Platenburg</title>
+    <title>Lisanne Platenburg</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="./style.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
     </script>
 
-    <script src="./experience.js" defer></script>
-    <script src="./education.js" defer></script>
     <script src="./projects.js" defer></script>
-    <script src="./localisation.js" defer></script>
-    <script src="./service.js" defer></script>
-    <script src="./settings.js" defer></script>
 </head>
 
 <body>
     <div id="header" class="container-fluid bg-maroon">
         <div class="container text-center py-5">
             <img id="headshot" src="./me.jpg"><br>
-            <span class="fs-1 fw-bold">Jasper Platenburg</span><br>
-            <span class="fs-3 fw-bold">Software Developer student</span><br>
+            <span class="fs-1 fw-bold text-white">Lisanne Platenburg</span><br>
+            <span class="fs-3 fw-bold text-white">Ondertitel</span><br>
 
             <div class="btn-group mt-5" role="group">
-                <a href="https://github.com/jxpsert" target="_blank" title="GitHub" class="btn text-white fs-1 mx-2"><i class="bi bi-github"></i><span class="icon-text">GitHub</span></a>
-                <a href="https://www.linkedin.com/in/jasper-platenburg/" target="_blank" title="LinkedIn" class="btn text-white fs-1 mx-2"><i class="bi bi-linkedin"></i><span class="icon-text">LinkedIn</span></a>
+                <!-- <a href="https://www.linkedin.com/in/lisanne-platenburg/" target="_blank" title="LinkedIn" class="btn text-white fs-1 mx-2"><i class="bi bi-linkedin"></i><span class="icon-text">LinkedIn</span></a> -->
                 <a href="mailto:jplatenburg@ptdk.nl" target="_blank" title="E-mail" class="btn text-white fs-1 mx-2"><i class="bi bi-envelope-at-fill"></i><span class="icon-text">E-mail</span></a>
-                <a href="https://blog.ptdk.nl" target="_blank" title="Blog" class="btn text-white fs-1 mx-2"><i class="bi bi-newspaper"></i><span class="icon-text">Blog</span></a>
             </div>
         </div>
     </div>
     <div class="container pt-5 w-75" id="content">
-        <span id="lang_en" onclick="english();" class="lang"><img src="/assets/flag_uk_16.png"> English</span> / <span id="lang_nl" class="lang link" onclick="dutch();"><img src="/assets/flag_nl_16.png"> Nederlands</span>
         <section id="personal">
             <h1>Persoonlijke informatie</h1>
-            <span class="fs-2 fw-bold">Hi there!</span>
+            <span class="fs-2 fw-bold">Hoi!</span>
             <p class="fs-6">
 
                 <h5 id="contact">Contact</h5>
@@ -49,7 +41,20 @@
             <h1>Werkervaring</h1>
 
             <ul id="worklist">
-
+                <li>
+                    <div class="experience work">
+                        <div class="col-10"><span class="title">Crewtrainer</span><span class="company"><i class="bi bi-briefcase-fill"></i>&nbsp;McDonald's Nijmegen Novium</span><span class="duration"><i class="bi bi-clock-fill"></i>&nbsp;2023-03 - heden</span>
+                            <p class="description">Als Crewtrainer zorg ik ervoor dat nieuwe medewerkers wegwijs worden gemaakt binnen McDonald's. Ik geef trainingen volgens het Crew Development Program en werk daarnaast mee op de vloer. Ook ondersteun ik bestaande medewerkers in het ontwikkelen van hun vaardigheden.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="experience work past">
+                        <div class="col-10"><span class="title">Crewlid</span><span class="company"><i class="bi bi-briefcase-fill"></i>&nbsp;McDonald's Nijmegen Novium</span><span class="duration"><i class="bi bi-clock-fill"></i>&nbsp;2018-10 - 2023-03</span>
+                            <p class="description">Als Crewlid was ik verantwoordelijk voor het bereiden van producten, het opnemen van bestellingen en het schoonhouden van de werkplek.</p>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </section>
 
@@ -58,6 +63,34 @@
 
             <ul id="edulist">
 
+                <li>
+                    <div class="experience edu">
+                        <div class="col-10"><span class="title" title="Niet afgerond">Legal Insurance &amp; HR services Specialist</span><span class="school"><i class="bi bi-building-fill"></i>&nbsp;ROC Nijmegen</span><span class="duration"><i class="bi bi-clock-fill"></i>&nbsp;2023-08 - heden</span>
+                            <p class="description">Op de opleiding Legal, Insurance &amp; HR services Specialist van ROC Nijmegen leer ik alles over werken in een juridische omgeving, verzekeringen of een HR-omgeving.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="experience edu past">
+                        <div class="col-10"><span class="title" title="Niet afgerond">Literatuurwetenschap</span><span class="school"><i class="bi bi-building-fill"></i>&nbsp;Universiteit Utrecht</span><span class="duration"><i class="bi bi-clock-fill"></i>&nbsp;2022-09 - 2023-01</span>
+                            <p class="description">Tijdens de bachelor Literatuurwetenschap bekeek en vergeleek ik literatuur van over de hele wereld.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="experience edu past">
+                        <div class="col-10"><span class="title" title="Niet afgerond">PABO</span><span class="school"><i class="bi bi-building-fill"></i>&nbsp;Hogeschool van Arnhem en Nijmegen</span><span class="duration"><i class="bi bi-clock-fill"></i>&nbsp;2021-09 - 2022-08</span>
+                            <p class="description">Op de PABO leerde ik alles over het lesgeven aan kinderen van 4 tot 12 jaar. Ik liep stage op verschillende basisscholen en leerde over de ontwikkeling van kinderen en hoe ik ze het beste kan helpen.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="experience edu past">
+                        <div class="col-10"><span class="title">VWO</span><span class="school"><i class="bi bi-building-fill"></i>&nbsp;Dominicus College Nijmegen</span><span class="duration"><i class="bi bi-clock-fill"></i>&nbsp;2015-08 - 2015-07</span>
+                            <p class="description">Op het VWO leerde ik over verschillende vakken, zoals Nederlands, Engels, wiskunde, geschiedenis, economie, filosofie, maatschappijleer, lichamelijke opvoeding, en tekenen. Ik koos voor het profiel Cultuur &amp; Maatschappij.</p>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </section>
 
@@ -67,16 +100,6 @@
             <ul id="projlist" class="cols-3">
 
             </ul>
-        </section>
-
-        <section id="services">
-            <h1>Diensten</h1>
-
-            <div id="services-grid" class="grid">
-
-            </div>
-
-            <span id="interestedSpan">Geïnteresseerd?</span> <a href="#contact">Contact</a>
         </section>
     </div>
 </body>

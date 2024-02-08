@@ -1,28 +1,48 @@
 const LoadEducation = () => {
-  const educationURL =
-    "https://0v4j861z.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20%22education%22%5D%20%7C%20order(startdate%20desc)";
-
   const edulist = document.querySelector("#edulist");
 
-  fetch(educationURL)
-    .then((response) => response.json())
-    .then((data) => {
-      data.result.forEach((item) => {
-        createCard({
-          title: item.title,
-          title_nl: item.title_nl,
-          company: item.company,
-          startDate: item.startdate,
-          endDate: item.enddate,
-          description: item.description,
-          description_nl: item.description_nl,
-          skills: item.skills,
-          skills_nl: item.skills_nl,
-          eqf: item.eqf,
-          degree: item.degree,
-        });
-      });
-    });
+  const data = [
+    {
+      title: "Legal Insurance & HR services Specialist",
+      company: "ROC Nijmegen",
+      startDate: "2023-08-01",
+      endDate: null,
+      description:
+        "Op de opleiding Legal, Insurance & HR services Specialist van ROC Nijmegen leer ik alles over werken in een juridische omgeving, verzekeringen of een HR-omgeving.",
+      eqf: 4,
+      degree: false,
+    },
+    {
+      title: "Literatuurwetenschap",
+      company: "Universiteit Utrecht",
+      startDate: "2022-09-01",
+      endDate: "2023-01-31",
+      description:
+        "Tijdens de bachelor Literatuurwetenschap bekeek en vergeleek ik literatuur van over de hele wereld.",
+      eqf: 6,
+      degree: false,
+    },
+    {
+      title: "PABO",
+      company: "Hogeschool van Arnhem en Nijmegen",
+      startDate: "2021-09-01",
+      endDate: "2022-08-31",
+      description:
+        "Op de PABO leerde ik alles over het lesgeven aan kinderen van 4 tot 12 jaar. Ik liep stage op verschillende basisscholen en leerde over de ontwikkeling van kinderen en hoe ik ze het beste kan helpen.",
+      eqf: 6,
+      degree: false,
+    },
+    {
+      title: "VWO",
+      company: "Dominicus College Nijmegen",
+      startDate: "2015-08-01",
+      endDate: "2015-07-15",
+      description:
+        "Op het VWO leerde ik over verschillende vakken, zoals Nederlands, Engels, wiskunde, geschiedenis, economie, filosofie, maatschappijleer, lichamelijke opvoeding, en tekenen. Ik koos voor het profiel Cultuur & Maatschappij.",
+      eqf: 4,
+      degree: true,
+    },
+  ];
 
   const createCard = (data) => {
     const li = document.createElement("li");
@@ -38,10 +58,9 @@ const LoadEducation = () => {
 
     const spanTitle = document.createElement("span");
     spanTitle.classList.add("title");
-    if (localStorage.getItem("lang") == "nl") {
-      spanTitle.innerText = data.title_nl;
-    } else {
-      spanTitle.innerText = data.title;
+    spanTitle.innerText = data.title;
+    if (!data.degree) {
+      spanTitle.title = "Niet afgerond";
     }
 
     const spanCompany = document.createElement("span");
@@ -52,14 +71,7 @@ const LoadEducation = () => {
     spanDuration.classList.add("duration");
 
     if (data.endDate == null) {
-      switch (localStorage.getItem("lang")) {
-        case "nl":
-          endDate = "heden";
-          break;
-        default:
-          endDate = "present";
-          break;
-      }
+      endDate = "heden";
     } else {
       endDate = endDate = data.endDate.substring(0, data.endDate.length - 3);
     }
@@ -70,11 +82,8 @@ const LoadEducation = () => {
 
     const pDescription = document.createElement("p");
     pDescription.classList.add("description");
-    if (localStorage.getItem("lang") == "nl") {
-      pDescription.innerText = data.description_nl;
-    } else {
-      pDescription.innerText = data.description;
-    }
+
+    pDescription.innerText = data.description;
 
     col10Div.appendChild(spanTitle);
     col10Div.appendChild(spanCompany);
@@ -91,10 +100,6 @@ const LoadEducation = () => {
       spanSkills.innerText = "Skills";
 
       const ulSkills = document.createElement("ul");
-
-      if (localStorage.getItem("lang") == "nl") {
-        data.skills = data.skills_nl;
-      }
 
       data.skills.forEach((skill) => {
         const liSkill = document.createElement("li");
@@ -116,6 +121,19 @@ const LoadEducation = () => {
 
     edulist.appendChild(li);
   };
+
+  data.forEach((item) => {
+    createCard({
+      title: item.title,
+      company: item.company,
+      startDate: item.startDate,
+      endDate: item.endDate,
+      description: item.description,
+      skills: item.skills,
+      eqf: item.eqf,
+      degree: item.degree,
+    });
+  });
 };
 
 LoadEducation();
